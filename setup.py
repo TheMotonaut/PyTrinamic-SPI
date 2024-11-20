@@ -21,6 +21,7 @@ setuptools.setup(
         "canopen",
         "pyserial>=3",
         "IntelHex>=2.3",
+        "spidev",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",

@@ -19,6 +19,7 @@ from ..connections import UartIcInterface
 from ..connections import UsbTmclInterface
 from ..connections import SlcanTmclInterface
 from ..connections import IxxatTmclInterface
+from ..connections import SpiIcInterface
 
 logger = logging.getLogger(__name__)
 
@@ -109,6 +110,7 @@ class ConnectionManager:
         ("uart_ic", UartIcInterface, 9600),
         ("usb_tmcl", UsbTmclInterface, 115200),
         ("ixxat_tmcl", IxxatTmclInterface, 1000000),
+        ("spi_ic", SpiIcInterface, 500e6)
     ]
 
     def __init__(self, arg_list=None, connection_type="any"):
